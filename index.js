@@ -47,5 +47,5 @@ module.exports = (key, config = {}) => async (invoiceId, data = {}) => {
     path,
     fs,
     sizeOf
-  })), { pageSize: 'letter' });
+  })), { pageSize: 'letter', 'enable-local-file-access': true });
 }
